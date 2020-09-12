@@ -1,0 +1,149 @@
+.content {
+  display: flex;
+  align-items: center;
+  justify-items: center;
+  width: 70%;
+  height: 60%;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px;
+  overflow: hidden;
+  position: relative;
+}
+.content .sign-in, .content .change-button, .content .sign-up {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+  height: 100%;
+}
+.content .sign-in {
+  background-color: var(--form-background-color);
+  transition: 0.3s ease-in-out;
+  z-index: 2;
+}
+.content .change-button {
+  transform: translateX(100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: opacity 3s;
+}
+.content .change-button button {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  width: 200px;
+  height: 36px;
+  background-color: var(--button-color);
+  border: none;
+  border-radius: 4px;
+  box-shadow: 0 0 10px;
+  transition: background-color 0.3s;
+  transform: translateX(0);
+}
+.content .change-button button span {
+  background-color: rgba(0, 0, 0, 0.2);
+  width: 36px;
+  height: 36px;
+  border-radius: 4px 0 0 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.content .change-button button span::after {
+  content: "";
+  background-image: url("../assets/ico/arrow-up.svg");
+  width: 20px;
+  height: 20px;
+}
+.content .change-button button strong {
+  flex: 1;
+  color: white;
+  text-align: center;
+}
+.content .change-button button:hover {
+  background-color: #662db5;
+}
+.content .sign-up {
+  transform: translateX(200%);
+  background-color: var(--form-background-color);
+  transition: 0.3s ease-in-out;
+}
+.content .sign-up button {
+  margin-top: 20px;
+}
+.content form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 80%;
+}
+.content form input {
+  margin: 10px 0;
+  padding: 10px;
+  width: 80%;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+}
+.content form input::placeholder {
+  color: var(--placeholder);
+}
+.content form a {
+  text-decoration: none;
+  color: var(--base-color);
+  margin: 10px 0 20px;
+}
+.content form button {
+  display: flex;
+  align-items: center;
+  width: 200px;
+  height: 36px;
+  background-color: var(--button-color);
+  border: none;
+  border-radius: 4px;
+  transition: 0.3s;
+}
+.content form button span {
+  background-color: rgba(0, 0, 0, 0.2);
+  width: 36px;
+  height: 36px;
+  border-radius: 4px 0 0 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.content form button span::after {
+  content: "";
+  background-image: url("../assets/ico/log-in.svg");
+  width: 20px;
+  height: 20px;
+}
+.content form button strong {
+  flex: 1;
+  color: white;
+  text-align: center;
+}
+.content form button:hover {
+  background-color: #662db5;
+}
+.content .sign-in-toggle {
+  transform: translateX(-100%);
+}
+.content .change-button-toggle {
+  transform: translateX(0);
+}
+.content .change-button-toggle button {
+  opacity: 1;
+}
+.content .sign-up-toggle {
+  transform: translateX(100%);
+}
+.content h2 {
+  margin-bottom: 15px;
+}
+
+/*# sourceMappingURL=style.css.map */
